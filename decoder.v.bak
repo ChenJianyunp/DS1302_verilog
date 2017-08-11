@@ -1,12 +1,3 @@
-/*Name: decoder
-Compiler: Quartus Prime Lite Edition 17.0.0
-Coded by: Jianyu Chen
-Place: Nanpin, China
-Function: Output the code for Common anode digital tube from the input number. The clk of this module must be higher than
-the seg_change module
-Time: 11th,Aug,2017 
-*/
-
 module decoder(input clk,
 					input rst_n,
 					input [3:0]number,

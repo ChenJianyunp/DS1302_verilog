@@ -1,3 +1,11 @@
+/*Name: seg_change
+Compiler: Quartus Prime Lite Edition 17.0.0
+Coded by: Jianyu Chen
+Place: Nanpin, China
+Function: change the selected tube to show number on all 6 tubes
+Time: 11th,Aug,2017 
+*/
+
 module led_seg(input [7:0]second_in,
 			input [7:0]minute_in,
 			input [7:0]hour_in,

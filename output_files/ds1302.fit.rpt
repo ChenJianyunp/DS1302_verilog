@@ -1,5 +1,5 @@
 Fitter report for ds1302
-Fri Aug 11 11:43:59 2017
+Fri Aug 11 23:55:23 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -68,7 +68,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Aug 11 11:43:59 2017       ;
+; Fitter Status                      ; Successful - Fri Aug 11 23:55:23 2017       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; ds1302                                      ;
 ; Top-level Entity Name              ; top_level                                   ;
@@ -154,14 +154,14 @@ agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.05        ;
+; Average used               ; 1.06        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.8%      ;
-;     Processor 3            ;   1.7%      ;
-;     Processor 4            ;   1.7%      ;
+;     Processor 2            ;   1.9%      ;
+;     Processor 3            ;   1.9%      ;
+;     Processor 4            ;   1.9%      ;
 +----------------------------+-------------+
 
 
@@ -207,7 +207,7 @@ agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in F:/verilog practice/ds1302/output_files/ds1302.pin.
+The pin-out file can be found in F:/verilog practice/ds1302_verilog/output_files/ds1302.pin.
 
 
 +-------------------------------------------------------------------------+
@@ -1249,28 +1249,28 @@ Info (176353): Automatically promoted node clk50~input (placed in PIN E1 (CLK1, 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
 Info (176353): Automatically promoted node altera_internal_jtag~TCKUTAP 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node clkdiv:inst|clkout  File: F:/verilog practice/ds1302/clkdiv.v Line: 8
+Info (176353): Automatically promoted node clkdiv:inst|clkout  File: F:/verilog practice/ds1302_verilog/clkdiv.v Line: 8
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node clkdiv:inst|clkout~0 File: F:/verilog practice/ds1302/clkdiv.v Line: 8
+        Info (176357): Destination node clkdiv:inst|clkout~0 File: F:/verilog practice/ds1302_verilog/clkdiv.v Line: 8
 Info (176353): Automatically promoted node rst_n~input (placed in PIN M15 (CLK6, DIFFCLK_3p))
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G9
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node led_seg:inst2|rnum_out[3]~0 File: F:/verilog practice/ds1302/seg_change.v Line: 26
-        Info (176357): Destination node test:inst8|Decoder0~1 File: F:/verilog practice/ds1302/test.v Line: 49
-        Info (176357): Destination node test:inst8|rwr_addr[3]~2 File: F:/verilog practice/ds1302/test.v Line: 49
+        Info (176357): Destination node led_seg:inst2|rnum_out[3]~0 File: F:/verilog practice/ds1302_verilog/seg_change.v Line: 34
+        Info (176357): Destination node test:inst8|Decoder0~1 File: F:/verilog practice/ds1302_verilog/test.v Line: 59
+        Info (176357): Destination node test:inst8|rwr_addr[3]~2 File: F:/verilog practice/ds1302_verilog/test.v Line: 59
 Info (176353): Automatically promoted node sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|reset_all  File: d:/quartus/quartus/libraries/megafunctions/sld_signaltap_impl.vhd Line: 882
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
         Info (176357): Destination node sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_buffer_manager:sld_buffer_manager_inst|last_buffer_write_address_sig[0]~0 File: d:/quartus/quartus/libraries/megafunctions/sld_buffer_manager.vhd Line: 356
         Info (176357): Destination node sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|acq_buf_read_reset~0 File: d:/quartus/quartus/libraries/megafunctions/sld_buffer_manager.vhd Line: 638
         Info (176357): Destination node sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|acq_buf_read_reset File: d:/quartus/quartus/libraries/megafunctions/sld_buffer_manager.vhd Line: 638
-Info (176353): Automatically promoted node test:inst8|rrst_spi  File: F:/verilog practice/ds1302/test.v Line: 49
+Info (176353): Automatically promoted node test:inst8|rrst_spi  File: F:/verilog practice/ds1302_verilog/test.v Line: 59
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node test:inst8|spi:u1|Decoder0~0 File: F:/verilog practice/ds1302/spi.v Line: 94
-        Info (176357): Destination node test:inst8|rrst_spi~2 File: F:/verilog practice/ds1302/test.v Line: 49
-        Info (176357): Destination node test:inst8|spi:u1|io_dir~0 File: F:/verilog practice/ds1302/spi.v Line: 18
+        Info (176357): Destination node test:inst8|spi:u1|Decoder0~0 File: F:/verilog practice/ds1302_verilog/spi.v Line: 117
+        Info (176357): Destination node test:inst8|rrst_spi~2 File: F:/verilog practice/ds1302_verilog/test.v Line: 59
+        Info (176357): Destination node test:inst8|spi:u1|io_dir~0 File: F:/verilog practice/ds1302_verilog/spi.v Line: 35
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
@@ -1287,24 +1287,24 @@ Info (170195): Router estimated average interconnect usage is 1% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (11888): Total time spent on timing analysis during the Fitter is 0.35 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file F:/verilog practice/ds1302/output_files/ds1302.fit.smsg
+Info (144001): Generated suppressed messages file F:/verilog practice/ds1302_verilog/output_files/ds1302.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 9 warnings
     Info: Peak virtual memory: 1386 megabytes
-    Info: Processing ended: Fri Aug 11 11:44:01 2017
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Processing ended: Fri Aug 11 23:55:24 2017
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:09
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in F:/verilog practice/ds1302/output_files/ds1302.fit.smsg.
+The suppressed messages can be found in F:/verilog practice/ds1302_verilog/output_files/ds1302.fit.smsg.
 
 
