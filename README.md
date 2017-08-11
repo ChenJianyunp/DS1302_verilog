@@ -1,1 +1,1 @@
-# ds1302_verilog
+# This is a Verilog project to initialize the ds1302 clock chip and read the time data from the chip. The result of the chip will be shown on an 8 bit LED segment.
