@@ -1,0 +1,31 @@
+module spi(output ce, //enable the ds1302
+				output sclk,//clock for ds1302
+				inout io,  //input and output data
+				input clk,	// clock for this module
+				input wr,
+				input direction,
+				input rst_n;
+				output rd
+				);
+
+reg[7:0] rd;
+reg io;
+reg direction;
+reg[5:0] cnt;
+reg sclk;
+reg ce;
+reg[7:0] rd;
+always@(posedge clk or negedge rst_n)
+begin
+	if(~rst_n)begin
+		cnt<=5'd0;
+	end
+	else case(cnt)
+	6'd0:begin
+		ce<=1'b0;
+		io<=1'b0;
+	end
+	endcase
+end
+
+endmodule 

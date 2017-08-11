@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/verilog practice/ds1302/simulation/modelsim
+vspi
+Z1 !s110 1502241508
+!i10b 1
+!s100 ;fig:3^L9f2`E0]R_Ujj^3
+I1BDaRG@27WhT;_6mHTjHh2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1502241493
+8F:/verilog practice/ds1302/spi.v
+FF:/verilog practice/ds1302/spi.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1502241508.000000
+!s107 F:/verilog practice/ds1302/spi.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/verilog practice/ds1302|F:/verilog practice/ds1302/spi.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+F:/verilog practice/ds1302}
+Z6 tCvgOpt 0
+vspi_vlg_tst
+R1
+!i10b 1
+!s100 4__jlVz]^2`ImTN^=SKSM0
+IKL6B9;J4[`Z<1ZfJE?C`?2
+R2
+R0
+w1502240853
+8F:/verilog practice/ds1302/simulation/modelsim/spi.vt
+FF:/verilog practice/ds1302/simulation/modelsim/spi.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/verilog practice/ds1302/simulation/modelsim/spi.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/verilog practice/ds1302/simulation/modelsim|F:/verilog practice/ds1302/simulation/modelsim/spi.vt|
+!i113 1
+R5
+!s92 -vlog01compat -work work {+incdir+F:/verilog practice/ds1302/simulation/modelsim}
+R6

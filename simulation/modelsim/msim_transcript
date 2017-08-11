@@ -1,0 +1,60 @@
+# Reading D:/quartus/modelsim_ase/tcl/vsim/pref.tcl
+# do ds1302_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+F:/verilog\ practice/ds1302 {F:/verilog practice/ds1302/spi.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:18:28 on Aug 09,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/verilog practice/ds1302" F:/verilog practice/ds1302/spi.v 
+# -- Compiling module spi
+# 
+# Top level modules:
+# 	spi
+# End time: 09:18:28 on Aug 09,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/verilog\ practice/ds1302/simulation/modelsim {F:/verilog practice/ds1302/simulation/modelsim/spi.vt}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:18:28 on Aug 09,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/verilog practice/ds1302/simulation/modelsim" F:/verilog practice/ds1302/simulation/modelsim/spi.vt 
+# -- Compiling module spi_vlg_tst
+# 
+# Top level modules:
+# 	spi_vlg_tst
+# End time: 09:18:28 on Aug 09,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  spi_vlg_tst
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" spi_vlg_tst 
+# Start time: 09:18:29 on Aug 09,2017
+# Loading work.spi_vlg_tst
+# Loading work.spi
+# ** Warning: (vsim-3017) F:/verilog practice/ds1302/simulation/modelsim/spi.vt(46): [TFMPC] - Too few port connections. Expected 10, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /spi_vlg_tst/i1 File: F:/verilog practice/ds1302/spi.v
+# ** Warning: (vsim-3722) F:/verilog practice/ds1302/simulation/modelsim/spi.vt(46): [TFMPC] - Missing connection for port 'finish'.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 100 ps
+# Running testbench
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 09:20:39 on Aug 09,2017, Elapsed time: 0:02:10
+# Errors: 0, Warnings: 2

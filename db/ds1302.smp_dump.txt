@@ -1,0 +1,18 @@
+
+State Machine - |top_level|led_seg:inst2|rseg_sel
+Name rseg_sel.bit5 rseg_sel.bit4 rseg_sel.bit3 rseg_sel.bit2 rseg_sel.bit1 rseg_sel.bit0 
+rseg_sel.bit5 0 0 0 0 0 0 
+rseg_sel.bit4 1 1 0 0 0 0 
+rseg_sel.bit3 1 0 1 0 0 0 
+rseg_sel.bit2 1 0 0 1 0 0 
+rseg_sel.bit1 1 0 0 0 1 0 
+rseg_sel.bit0 1 0 0 0 0 1 
+
+State Machine - |top_level|led_seg:inst2|bit
+Name bit.bit5 bit.bit4 bit.bit3 bit.bit2 bit.bit1 bit.bit0 
+bit.bit0 0 0 0 0 0 0 
+bit.bit4 0 1 0 0 0 1 
+bit.bit3 0 0 1 0 0 1 
+bit.bit2 0 0 0 1 0 1 
+bit.bit1 0 0 0 0 1 1 
+bit.bit5 1 0 0 0 0 1 

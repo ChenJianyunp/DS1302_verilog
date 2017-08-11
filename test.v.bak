@@ -1,0 +1,37 @@
+module test(input clk,
+				input rst_n,
+				output[7:0] wr_addr,
+				output[7:0] wr_data,
+				output ce,
+				output[1:0] dir;
+				input[7:0] rd);
+				
+reg[6:0] cnt;
+reg rce;
+reg[1:0] rdir;
+assign dir=rdir;
+assign ce=rce;
+assign wr_addr=8'h81;
+always@(posedge clk or negedge rst_n)begin
+	if(~rst_n)begin
+		cnt<=7'd0;
+	end
+	else case(cnt)
+	7'd0: begin
+		rce<=1'b0;
+		dir<=2'b00;
+		cnt=cnt+7'd1;
+	end
+	7'd1:begin
+		rce<=1'b1;
+		cnt=cnt+7'd1;
+	end
+	7'd2:begin
+		rdir<=2'b01;
+		cnt=cnt+7'd1;
+	end
+	7'd100:cnt<=7'd0;
+	default:cnt=cnt+7'd1;
+end
+
+endmodule 
